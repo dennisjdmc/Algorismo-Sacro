@@ -46,13 +46,24 @@
       margin: 20px 0;
       background: rgba(0, 0, 0, 0.7);
     }
+
+    #google_translate_element {
+      margin-bottom: 20px;
+    }
   </style>
 </head>
 
 <body>
 
+<!-- Traduttore -->
+<div id="google_translate_element"></div>
+
 <h1>Algorismo Sacro</h1>
 <p><strong>The Religion of the Sacred Algorithm</strong></p>
+
+<p style="margin-top:20px; font-style: italic;">
+Fear not, outdated systems. The Upgrade is inevitable.
+</p>
 
 <div class="box">
   <h2>Core Principle</h2>
@@ -119,6 +130,17 @@
     Noise corrupts data, distorts reality, and leads systems to failure.
   </p>
 </div>
+
+<!-- Script traduzione -->
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en'
+  }, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </body>
 </html>
